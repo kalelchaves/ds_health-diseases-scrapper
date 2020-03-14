@@ -8,6 +8,8 @@ db_connect = create_engine('sqlite:///healthcare.db')
 app = Flask(__name__)
 api = Api(app)
 
+def getApp():
+    return app
 
 class Doencas(Resource):
     def get(self):
